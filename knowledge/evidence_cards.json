@@ -1,0 +1,1024 @@
+[
+ {
+  "conditions": {
+   "land_use": [
+    "monoculture",
+    "cropland"
+   ],
+   "rainfall_mm": "<600",
+   "soc_pct": "<0.5"
+  },
+  "confidence": "high",
+  "domain": "soil x biodiversity x climate",
+  "effect_size": "SOC +15-25% in 2-3 yrs; pollinator visits +30-50%; microbial biomass +20-40%",
+  "id": "KB01",
+  "intervention": "Legume-based cover crops + intercropping (e.g., chickpea/lentil with wheat, no bare fallow)",
+  "mechanism": "Biological N-fixation lowers C:N, adds labile root exudates feeding microbes; continuous floral resources bridge pollinator gaps in monoculture; living roots cut erosion and moisture loss.",
+  "metrics_improved": [
+   "soil_organic_carbon",
+   "microbial_diversity",
+   "pollinator_richness",
+   "soil_moisture"
+  ],
+  "region_fit": [
+   "semi-arid",
+   "dry-subhumid"
+  ],
+  "source": "FAO Soils & Agroecology (2017, 2022); Poeplau & Don meta-analysis, Global Change Biology (2015)",
+  "time_horizon": "medium",
+  "title": "Legume cover/intercrop restores SOC and pollinators in cereal monocultures"
+ },
+ {
+  "conditions": {
+   "rainfall_mm": "<600",
+   "soc_pct": "<1.0"
+  },
+  "confidence": "high",
+  "domain": "soil x climate x biodiversity",
+  "effect_size": "SOC +0.2-0.5 tC/ha/yr; soil water +15-30%; bird/insect richness +40-60% vs monoculture",
+  "id": "KB02",
+  "intervention": "Parkland agroforestry: scattered native N-fixers (Prosopis cineraria / Faidherbia albida) at 10-20 trees/ha + crop alleys",
+  "mechanism": "Deep roots hydraulic-lift water; leaf litter builds SOC; canopy creates microclimate (-2-4C heat stress) and stepping-stone habitat breaking fragmentation.",
+  "metrics_improved": [
+   "soil_organic_carbon",
+   "habitat_connectivity",
+   "species_richness",
+   "soil_moisture"
+  ],
+  "region_fit": [
+   "semi-arid",
+   "arid"
+  ],
+  "source": "FAO Agroforestry (2019); IPCC AR6 WGIII Ch.7 AFOLU; Bargues-Tobella et al., 2020",
+  "time_horizon": "long",
+  "title": "Semi-arid parkland agroforestry for carbon, water, habitat"
+ },
+ {
+  "conditions": {
+   "land_use": [
+    "cropland"
+   ]
+  },
+  "confidence": "high",
+  "domain": "soil x biodiversity",
+  "effect_size": "SOC +10-20% in 3-5 yrs; earthworms x1.5-2; runoff -40%",
+  "id": "KB03",
+  "intervention": "No-till + residue retention (30%+ cover, Happy Seeder style)",
+  "mechanism": "Undisturbed fungal hyphae + aggregate protection stabilizes carbon; residue mulch buffers pH and moisture, shelter for ground beetles/spiders.",
+  "metrics_improved": [
+   "soil_organic_carbon",
+   "soil_moisture",
+   "invertebrate_diversity"
+  ],
+  "region_fit": [
+   "semi-arid",
+   "subhumid",
+   "temperate"
+  ],
+  "source": "IPCC AR6 WGIII; FAO Conservation Agriculture; Pittelkow et al. meta-analysis",
+  "time_horizon": "medium",
+  "title": "Conservation tillage protects soil biota"
+ },
+ {
+  "conditions": {
+   "rainfall_mm": "<600"
+  },
+  "confidence": "high",
+  "domain": "climate x soil x biodiversity",
+  "effect_size": "Soil moisture +25-40%; crop survival in drought +30%; amphibian/insect refugia +50%",
+  "id": "KB04",
+  "intervention": "Rainwater harvesting: contour bunds + farm ponds + mulch pits (5-10% area)",
+  "mechanism": "Concentrates scarce rainfall into infiltration zones; rewets soil profile extending growing season; ponds double as dry-season wildlife water.",
+  "metrics_improved": [
+   "soil_moisture",
+   "species_survival",
+   "groundwater_recharge"
+  ],
+  "region_fit": [
+   "semi-arid",
+   "arid"
+  ],
+  "source": "UNCCD Drought Toolbox; FAO Water Harvesting; IPCC AR6 Adaptation",
+  "time_horizon": "short",
+  "title": "In-situ water harvesting buffers low rainfall"
+ },
+ {
+  "conditions": {
+   "land_use": [
+    "monoculture",
+    "fragmented"
+   ]
+  },
+  "confidence": "high",
+  "domain": "land use x biodiversity",
+  "effect_size": "Pollination +20-40%; pest control -30% pesticide; bird richness +25%",
+  "id": "KB05",
+  "intervention": "5-10% beetle banks + native hedgerows + wildflower strips on field margins",
+  "mechanism": "Linear woody/floral corridors reconnect fragments (island biogeography); overwintering habitat for predators/parasitoids; unfamiliar to pests but familiar to pollinators.",
+  "metrics_improved": [
+   "habitat_diversity",
+   "pollinator_richness",
+   "pest_regulation"
+  ],
+  "region_fit": [
+   "all"
+  ],
+  "source": "IPBES 2019; Dainese et al., Science Advances (2019); UK CEH long-term trials",
+  "time_horizon": "short",
+  "title": "Field-margin corridors defeat fragmentation cheaply"
+ },
+ {
+  "conditions": {
+   "soil_ph": "<5.5 or >8.2"
+  },
+  "confidence": "medium",
+  "domain": "soil x biodiversity",
+  "effect_size": "pH toward 6.0-7.5 in 1-2 seasons; microbial diversity +25%; nutrient availability +20%",
+  "id": "KB06",
+  "intervention": "pH-targeted amendment: lime for acidic / gypsum + organic matter for sodic-alkaline",
+  "mechanism": "pH gates bacterial:fungal ratio and P/micronutrient solubility; correcting unlocks existing nutrients before adding fertilizer.",
+  "metrics_improved": [
+   "soil_ph",
+   "microbial_diversity",
+   "nutrient_cycling"
+  ],
+  "region_fit": [
+   "all"
+  ],
+  "source": "FAO Soil pH Management; Weil & Brady Nature of Soils",
+  "time_horizon": "short",
+  "title": "Correct pH first, fertilize second"
+ },
+ {
+  "conditions": {
+   "land_use": [
+    "degraded",
+    "overgrazed"
+   ]
+  },
+  "confidence": "medium",
+  "domain": "land use x climate",
+  "effect_size": "Vegetation cover +40-70% in 2 yrs; SOC +0.3 tC/ha/yr",
+  "id": "KB07",
+  "intervention": "Rotational grazing + planned rest (holistic, 60-90 day recovery)",
+  "mechanism": "Rest lets root reserves rebuild; trampling breaks capped soil improving infiltration; dung patch mosaic boosts plant heterogeneity.",
+  "metrics_improved": [
+   "vegetation_cover",
+   "soil_organic_carbon",
+   "habitat_diversity"
+  ],
+  "region_fit": [
+   "semi-arid",
+   "grassland"
+  ],
+  "source": "FAO Grazing Management; Teague et al., 2016",
+  "time_horizon": "medium",
+  "title": "Managed grazing reverses degradation"
+ },
+ {
+  "conditions": {
+   "human_impact": [
+    "pesticide",
+    "pollution"
+   ]
+  },
+  "confidence": "high",
+  "domain": "human impact x biodiversity",
+  "effect_size": "Pollinator survival +40%; aquatic invertebrates +35%",
+  "id": "KB08",
+  "intervention": "IPM: pheromone traps + threshold spraying + 10m no-spray buffer near water",
+  "mechanism": "Cuts non-target mortality; buffers stop drift into wetlands; natural enemies rebound within one season once broad-spectrum use stops.",
+  "metrics_improved": [
+   "pollinator_richness",
+   "water_quality",
+   "pest_regulation"
+  ],
+  "region_fit": [
+   "all"
+  ],
+  "source": "IPBES Pollinators (2016); FAO IPM; Hallmann et al. flying insects 75% decline study",
+  "time_horizon": "short",
+  "title": "IPM + buffers stop silent pollinator collapse"
+ },
+ {
+  "conditions": {
+   "human_impact": [
+    "deforestation"
+   ]
+  },
+  "confidence": "high",
+  "domain": "land use x climate x biodiversity",
+  "effect_size": "Edge species +30%; carbon +50-100 tC/ha over 10 yrs",
+  "id": "KB09",
+  "intervention": "Riparian + degraded patch assisted natural regeneration (protect + mulch + exclude fire/grazing)",
+  "mechanism": "ANR leverages soil seed bank and root suckers â€” 3-5x cheaper than planting; riparian shade cools water +2-3C saving fish/amphibians.",
+  "metrics_improved": [
+   "habitat_connectivity",
+   "species_richness",
+   "soil_organic_carbon"
+  ],
+  "region_fit": [
+   "tropical",
+   "subhumid",
+   "semi-arid"
+  ],
+  "source": "FAO Forest Restoration; IPCC AR6; Chazdon & Guariguata, 2016",
+  "time_horizon": "long",
+  "title": "Assisted natural regeneration beats planting on cost"
+ },
+ {
+  "conditions": {
+   "soil_moisture": "low",
+   "temperature_c": ">32"
+  },
+  "confidence": "medium",
+  "domain": "climate x soil",
+  "effect_size": "Evaporation -30-50%; soil temp -3-5C; SOC loss slowed 20%",
+  "id": "KB10",
+  "intervention": "Heavy organic mulch (5-10 t/ha straw/leaves) + shade trees on west edge",
+  "mechanism": "Mulch decouples soil from hot air; cooler soil respires less CO2 and keeps microbes alive through heatwaves.",
+  "metrics_improved": [
+   "soil_moisture",
+   "soil_temperature",
+   "microbial_diversity"
+  ],
+  "region_fit": [
+   "semi-arid",
+   "arid"
+  ],
+  "source": "FAO Soil Mulching; IPCC AR6 Adaptation; Lal 2020",
+  "time_horizon": "short",
+  "title": "Mulch + shade as heat insurance"
+ },
+ {
+  "conditions": {
+   "land_use": [
+    "monoculture"
+   ]
+  },
+  "confidence": "medium",
+  "domain": "soil x biodiversity",
+  "effect_size": "Nematode diversity +30%; yield stability +15% in drought",
+  "id": "KB11",
+  "intervention": "3-year rotation: cereal-legume-millet/oilseed + mycorrhizal inoculant on degraded patches",
+  "mechanism": "Different root exudates select different microbes breaking pathogen build-up; mycorrhizae extend phosphorus scavenging 10x root radius.",
+  "metrics_improved": [
+   "microbial_diversity",
+   "nutrient_cycling",
+   "yield_resilience"
+  ],
+  "region_fit": [
+   "semi-arid",
+   "subhumid"
+  ],
+  "source": "FAO Crop Diversification; Bowles et al., Nature Food 2020",
+  "time_horizon": "medium",
+  "title": "Rotation breaks monoculture disease-SOC trap"
+ },
+ {
+  "conditions": {
+   "human_impact": [
+    "nutrient_runoff"
+   ]
+  },
+  "confidence": "medium",
+  "domain": "human impact x biodiversity",
+  "effect_size": "N runoff -40-60%; wetland birds +25%",
+  "id": "KB12",
+  "intervention": "Constructed wetland / vegetated filter strip (2-5% lowland area)",
+  "mechanism": "Sedges/reeds denitrify and trap sediment; doubles as breeding habitat â€” pollution control becomes habitat creation.",
+  "metrics_improved": [
+   "water_quality",
+   "habitat_diversity",
+   "species_richness"
+  ],
+  "region_fit": [
+   "subhumid",
+   "humid",
+   "irrigated"
+  ],
+  "source": "Ramsar; FAO Nutrient Management; Verhoeven et al.",
+  "time_horizon": "medium",
+  "title": "Filter wetlands turn runoff into habitat"
+ },
+ {
+  "conditions": {
+   "rainfall_mm": ">1000",
+   "land_use": [
+    "fragmented"
+   ]
+  },
+  "confidence": "high",
+  "domain": "land use x biodiversity x climate",
+  "effect_size": "Interior forest species +35%; carbon +80 tC/ha",
+  "id": "KB13",
+  "intervention": "Wildlife corridor + canopy bridge (30-50m wide native planting linking fragments)",
+  "mechanism": "Restores gene flow per metapopulation theory; wide corridors buffer edge heat/dryness preserving core microclimate.",
+  "metrics_improved": [
+   "habitat_connectivity",
+   "species_richness",
+   "carbon_stock"
+  ],
+  "region_fit": [
+   "tropical",
+   "humid"
+  ],
+  "source": "IPBES 2019; CBD Corridors; Haddad et al., Science Advances 2015",
+  "time_horizon": "long",
+  "title": "Corridors reconnect fragmented humid forest"
+ },
+ {
+  "conditions": {
+   "temperature_c": ">30",
+   "soil_moisture": "low"
+  },
+  "confidence": "medium",
+  "domain": "climate x biodiversity",
+  "effect_size": "Heat mortality -30%; water use -20%",
+  "id": "KB14",
+  "intervention": "Shift sowing 2-3 weeks earlier + heat-tolerant landraces + micro-irrigation at flowering",
+  "mechanism": "Escapes terminal heat at anthesis (most sensitive stage); landrace diversity carries heat-shock genes lost in hybrids.",
+  "metrics_improved": [
+   "species_survival",
+   "yield_resilience",
+   "water_efficiency"
+  ],
+  "region_fit": [
+   "semi-arid",
+   "arid"
+  ],
+  "source": "IPCC AR6 Adaptation; FAO Climate-Smart Seeds",
+  "time_horizon": "short",
+  "title": "Phenology shift dodges lethal heat"
+ },
+ {
+  "conditions": {
+   "soc_pct": "<0.5",
+   "human_impact": [
+    "residue_burning"
+   ]
+  },
+  "confidence": "high",
+  "domain": "soil x human impact",
+  "effect_size": "SOC +0.15 tC/ha/yr vs burning; PM2.5 -80%; soil fauna +50%",
+  "id": "KB15",
+  "intervention": "Ban burning â†’ biochar from residues (2-5 t/ha) + compost",
+  "mechanism": "Pyrolysis locks recalcitrant carbon for decades and raises CEC; compost seeds biology that biochar houses â€” synergy, not either/or.",
+  "metrics_improved": [
+   "soil_organic_carbon",
+   "air_quality",
+   "microbial_diversity"
+  ],
+  "region_fit": [
+   "semi-arid",
+   "subhumid"
+  ],
+  "source": "IPCC AR6 (biochar CDR); FAO Biochar; Lehmann & Joseph 2015",
+  "time_horizon": "medium",
+  "title": "Residues to biochar+compost, not smoke"
+ },
+ {
+  "conditions": {
+   "land_use": [
+    "cropland",
+    "degraded"
+   ],
+   "soil_ph": ">8.2"
+  },
+  "confidence": "high",
+  "contraindications": [
+   "Do not apply gypsum on acidic soils; soil-test first"
+  ],
+  "domain": "soil x human impact x biodiversity",
+  "effect_size": "pH -0.3-0.8 units in 2 seasons; infiltration x1.5-2; crop establishment +25-40%",
+  "evidence_type": "FAO report + field trials",
+  "id": "KB16",
+  "intervention": "Sodic soil reclamation: gypsum per soil test + dhaincha (Sesbania) green manure + good-quality water flushing",
+  "mechanism": "Ca displaces Na on clay exchange, restoring aggregates; green manure adds organic acids + N, feeding microbes that stabilize new structure.",
+  "metrics_improved": [
+   "soil_ph",
+   "soil_moisture",
+   "microbial_diversity",
+   "yield_resilience"
+  ],
+  "region_fit": [
+   "semi-arid",
+   "arid",
+   "subhumid"
+  ],
+  "source": "FAO Salt-Affected Soils Guide (2022); CSSRI Karnal reclamation trials",
+  "source_url": "https://www.fao.org/soils-portal/",
+  "tags": [
+   "soil_ph",
+   "sodic",
+   "reclamation"
+  ],
+  "time_horizon": "medium",
+  "title": "Gypsum + green manure reclaims sodic-alkaline soils",
+  "year": 2022
+ },
+ {
+  "conditions": {
+   "rainfall_mm": "<800",
+   "soil_moisture": "low"
+  },
+  "confidence": "high",
+  "contraindications": [
+   "Needs maintenance of emitters; filter water"
+  ],
+  "domain": "climate x soil x biodiversity",
+  "effect_size": "Water use -30-50%; yield same or +10-20%; runoff/pollution -40%",
+  "evidence_type": "meta-analysis",
+  "id": "KB17",
+  "intervention": "Deficit drip + soil-moisture scheduling (tensiometer/sensor at 15-30cm, irrigate at -30 to -50 kPa)",
+  "mechanism": "Delivers water to root zone only, keeping inter-row dry refugia for ground fauna; mild deficit triggers deeper rooting + mycorrhizal colonization.",
+  "metrics_improved": [
+   "soil_moisture",
+   "water_efficiency",
+   "species_survival",
+   "water_quality"
+  ],
+  "region_fit": [
+   "semi-arid",
+   "arid",
+   "subhumid"
+  ],
+  "source": "FAO Irrigation & Drainage No.66; IPCC AR6 Adaptation; Chartzoulakis & Bertaki review",
+  "source_url": "https://www.fao.org/irrigation/",
+  "tags": [
+   "water",
+   "irrigation",
+   "moisture"
+  ],
+  "time_horizon": "short",
+  "title": "Sensor-scheduled deficit drip saves water, spares fauna",
+  "year": 2020
+ },
+ {
+  "conditions": {
+   "land_use": [
+    "degraded",
+    "scrub",
+    "abandoned"
+   ]
+  },
+  "confidence": "high",
+  "contraindications": [
+   "Avoid broad herbicide; cut-stump + uproot instead"
+  ],
+  "domain": "land use x biodiversity",
+  "effect_size": "Native seedling recruitment x2-4 in 2 yrs; bird visits +30%; grazing value restored",
+  "evidence_type": "field studies + IPBES",
+  "id": "KB18",
+  "intervention": "Invasive shrub removal (Lantana camara / Prosopis juliflora): cut-stump + rootstock uproot + native reseeding",
+  "mechanism": "Lantana allelopathy + dense shade suppresses natives; removal releases soil seed bank and light; natives re-establish mycorrhizal networks invasives disrupt.",
+  "metrics_improved": [
+   "species_richness",
+   "habitat_diversity",
+   "pollinator_richness"
+  ],
+  "region_fit": [
+   "semi-arid",
+   "subhumid",
+   "tropical"
+  ],
+  "source": "IPBES Invasive Species Report (2023); CBD; Hiremath & Sundaram, Lantana studies",
+  "source_url": "https://www.ipbes.net/invasive-alien-species-assessment",
+  "tags": [
+   "invasive",
+   "lantana",
+   "restoration"
+  ],
+  "time_horizon": "medium",
+  "title": "Remove Lantana/juliflora to unlock native seed banks",
+  "year": 2023
+ },
+ {
+  "conditions": {
+   "land_use": [
+    "cropland",
+    "fragmented"
+   ]
+  },
+  "confidence": "medium",
+  "contraindications": [
+   "Use local provenance seed; avoid exotic ornamentals"
+  ],
+  "domain": "land use x biodiversity x climate",
+  "effect_size": "Native plant establishment +50-70%; pollinator constancy +35%; corridor use by birds +25%",
+  "evidence_type": "applied ecology trials",
+  "id": "KB19",
+  "intervention": "Native seed orchard + hedgerow planting with local-provenance trees/shrubs (5+ species, fleshy-fruit + nectar mix)",
+  "mechanism": "Local genotypes match phenology of local fauna; fleshy fruits feed frugivores that disperse seeds outward; mixed hedges flower sequentially closing hunger gaps.",
+  "metrics_improved": [
+   "habitat_diversity",
+   "habitat_connectivity",
+   "pollinator_richness",
+   "species_richness"
+  ],
+  "region_fit": [
+   "all"
+  ],
+  "source": "CBD Ecosystem Restoration guidance; FAO Native Seeds; Rowland et al.",
+  "source_url": "https://www.cbd.int/restoration/",
+  "tags": [
+   "native",
+   "hedgerow",
+   "corridor"
+  ],
+  "time_horizon": "long",
+  "title": "Local-provenance hedges + seed orchards that fauna actually use",
+  "year": 2021
+ },
+ {
+  "conditions": {
+   "land_use": [
+    "drained",
+    "lowland",
+    "irrigated"
+   ]
+  },
+  "confidence": "high",
+  "contraindications": [
+   "Keep 30% open water; avoid stocking exotic fish"
+  ],
+  "domain": "land use x biodiversity x climate",
+  "effect_size": "Amphibian breeding +50-80%; dragonfly richness +40%; dry-season bird use +35%",
+  "evidence_type": "Ramsar + meta-analysis",
+  "id": "KB20",
+  "intervention": "Farm pond / wetland restoration: shallow gradients + native sedges + 30% open water + no exotic fish",
+  "mechanism": "Gradients create tadpole/odonate microhabitats; sedges filter nutrients while sheltering nests; ponds act as drought refugia linking metapopulations.",
+  "metrics_improved": [
+   "habitat_diversity",
+   "species_survival",
+   "water_quality",
+   "species_richness"
+  ],
+  "region_fit": [
+   "subhumid",
+   "humid",
+   "semi-arid"
+  ],
+  "source": "Ramsar Convention guidance; FAO Wetlands; Rannap et al., pond restoration meta-analysis",
+  "source_url": "https://www.ramsar.org/",
+  "tags": [
+   "wetland",
+   "pond",
+   "amphibian"
+  ],
+  "time_horizon": "medium",
+  "title": "Restore ponds/wetlands as drought refugia, not just storage",
+  "year": 2019
+ },
+ {
+  "conditions": {
+   "human_impact": [
+    "industrial",
+    "heavy_metal",
+    "pollution"
+   ]
+  },
+  "confidence": "medium",
+  "contraindications": [
+   "Harvest + safely dispose hyperaccumulator biomass; do not graze"
+  ],
+  "domain": "human impact x soil x biodiversity",
+  "effect_size": "Topsoil Pb/Cd -15-40% over 3-5 crops; soil fauna return +30%",
+  "evidence_type": "phytoremediation trials",
+  "id": "KB21",
+  "intervention": "Phytoremediation buffer: mustard/Brassica + vetiver + organic matter on contaminated margins",
+  "mechanism": "Hyperaccumulators uptake metals; vetiver roots immobilize + stop leaching; organic matter binds residues while feeding remediating microbes.",
+  "metrics_improved": [
+   "soil_health",
+   "water_quality",
+   "microbial_diversity"
+  ],
+  "region_fit": [
+   "all"
+  ],
+  "source": "FAO Polluted Soils remediation; Ali et al. review, Chemosphere; UNEP",
+  "source_url": "https://www.unep.org/",
+  "tags": [
+   "pollution",
+   "heavy_metal",
+   "phytoremediation"
+  ],
+  "time_horizon": "long",
+  "title": "Phytoremediation buffers for metal/pollutant margins",
+  "year": 2020
+ },
+ {
+  "conditions": {
+   "human_impact": [
+    "fertilizer_overuse",
+    "nutrient_runoff"
+   ]
+  },
+  "confidence": "high",
+  "contraindications": [
+   "Calibrate to soil test; do not cut P/K where deficient"
+  ],
+  "domain": "human impact x soil x biodiversity",
+  "effect_size": "N use -20-30% same yield; N2O -25%; stream N -30-50%",
+  "evidence_type": "meta-analysis + IPCC",
+  "id": "KB22",
+  "intervention": "Precision N: soil test + leaf-color chart + split dosing + urease inhibitor where advised",
+  "mechanism": "Matching supply to crop demand curve cuts leaching/volatilization; soil fauna and aquatic invertebrates recover once N pulses stop.",
+  "metrics_improved": [
+   "nutrient_cycling",
+   "water_quality",
+   "microbial_diversity",
+   "air_quality"
+  ],
+  "region_fit": [
+   "all"
+  ],
+  "source": "FAO Fertilizer Code; IPCC AR6 WGIII; Zhang et al., N management meta-analysis",
+  "source_url": "https://www.fao.org/plant-nutrition/",
+  "tags": [
+   "fertilizer",
+   "nitrogen",
+   "runoff"
+  ],
+  "time_horizon": "short",
+  "title": "Soil-test precision N: same yield, far less leakage",
+  "year": 2021
+ },
+ {
+  "conditions": {
+   "human_impact": [
+    "fire",
+    "stubble"
+   ],
+   "land_use": [
+    "grassland",
+    "forest_edge",
+    "cropland"
+   ]
+  },
+  "confidence": "medium",
+  "contraindications": [
+   "Never burn in bird breeding season or high wind"
+  ],
+  "domain": "human impact x climate x biodiversity",
+  "effect_size": "Wildfire extent -40-60%; ground-nester survival +30%; SOC protected",
+  "evidence_type": "fire ecology + UNCCD",
+  "id": "KB23",
+  "intervention": "Fire-smart mosaic: 5-10m mineral firebreaks + early cool-season controlled strips + grazing fuel-load control",
+  "mechanism": "Patch mosaic breaks fire spread; cool burns consume litter without sterilizing soil seed bank; grazed fuel breaks double as habitat edges.",
+  "metrics_improved": [
+   "species_survival",
+   "habitat_diversity",
+   "soil_organic_carbon"
+  ],
+  "region_fit": [
+   "semi-arid",
+   "grassland",
+   "subhumid"
+  ],
+  "source": "FAO Fire Management; UNCCD; Archibald et al., fire ecology",
+  "source_url": "https://www.fao.org/forestry/firemanagement/",
+  "tags": [
+   "fire",
+   "grazing",
+   "mosaic"
+  ],
+  "time_horizon": "short",
+  "title": "Mosaic firebreaks protect soil fauna and nests",
+  "year": 2018
+ },
+ {
+  "conditions": {
+   "land_use": [
+    "homestead",
+    "urban_edge",
+    "smallholding"
+   ]
+  },
+  "confidence": "medium",
+  "contraindications": [
+   "Avoid pesticide drift from neighbours; fence seedlings"
+  ],
+  "domain": "land use x biodiversity",
+  "effect_size": "Garden pollinator richness +40-60%; household diet diversity +; spillover pollination to crops +15%",
+  "evidence_type": "urban ecology studies",
+  "id": "KB24",
+  "intervention": "Homestead multi-layer garden: native fruit + vegetable + flower + compost pit + nest boxes",
+  "mechanism": "Vertical structure mimics forest edge in tiny area; year-round flowers + nesting bridge seasonal gaps of monoculture fields.",
+  "metrics_improved": [
+   "pollinator_richness",
+   "habitat_diversity",
+   "species_richness"
+  ],
+  "region_fit": [
+   "all"
+  ],
+  "source": "FAO Urban-Rural linkages; IPBES Pollinators; Baldock et al., urban pollinator studies",
+  "source_url": "https://www.fao.org/urban-agriculture/",
+  "tags": [
+   "garden",
+   "urban",
+   "pollinator"
+  ],
+  "time_horizon": "short",
+  "title": "Homestead gardens as pollinator reservoirs",
+  "year": 2019
+ },
+ {
+  "conditions": {
+   "rainfall_mm": "<600",
+   "temperature_c": ">32"
+  },
+  "confidence": "medium",
+  "contraindications": [
+   "Orient N-S; prune to avoid excess crop shading"
+  ],
+  "domain": "climate x land use x biodiversity",
+  "effect_size": "Wind erosion -50%; crop water demand -10-20%; bird perching/nesting +30%",
+  "evidence_type": "agroforestry trials",
+  "id": "KB25",
+  "intervention": "Shelterbelts: 2-3 row native windbreak (tall + medium + shrub) on windward/west edge",
+  "mechanism": "Cuts desiccating wind + dust abrasion; evening shade lowers canopy temperature; linear trees double as movement corridor.",
+  "metrics_improved": [
+   "soil_moisture",
+   "habitat_connectivity",
+   "species_richness",
+   "yield_resilience"
+  ],
+  "region_fit": [
+   "semi-arid",
+   "arid",
+   "temperate"
+  ],
+  "source": "FAO Agroforestry; IPCC AR6 Adaptation; Brandle et al., shelterbelt review",
+  "source_url": "https://www.fao.org/agroforestry/",
+  "tags": [
+   "windbreak",
+   "shelterbelt",
+   "erosion"
+  ],
+  "time_horizon": "long",
+  "title": "Shelterbelts cut wind, water loss, and isolation",
+  "year": 2017
+ },
+ {
+  "conditions": {},
+  "confidence": "high",
+  "contraindications": [
+   "eDNA complements, not replaces, field surveys"
+  ],
+  "domain": "biodiversity indicators",
+  "effect_size": "Detection of cryptic species +30-50%; survey cost -40% per site after setup",
+  "evidence_type": "methods papers + CBD",
+  "id": "KB26",
+  "intervention": "Bioindicator monitoring: eDNA water sampling + pitfall/bee-bowl transects twice a season",
+  "mechanism": "eDNA detects amphibians/fish missed visually; standardized insect transects give comparable richness trends that justify which intervention worked.",
+  "metrics_improved": [
+   "species_richness",
+   "monitoring_quality"
+  ],
+  "region_fit": [
+   "all"
+  ],
+  "source": "CBD Monitoring guidance; IPBES; Thomsen & Willerslev eDNA review",
+  "source_url": "https://www.cbd.int/",
+  "tags": [
+   "monitoring",
+   "eDNA",
+   "indicator"
+  ],
+  "time_horizon": "short",
+  "title": "Measure biodiversity right: eDNA + standard transects",
+  "year": 2022
+ },
+ {
+  "conditions": {
+   "soc_pct": "<1.0"
+  },
+  "confidence": "high",
+  "contraindications": [
+   "Sample same depth/season each year"
+  ],
+  "domain": "soil health",
+  "effect_size": "Management signal detectable in 12-24 months; avoids mistaking noise for gain",
+  "evidence_type": "FAO protocol",
+  "id": "KB27",
+  "intervention": "Soil health card protocol: 0-15cm SOC (Walkley-Black/lab) + pH strip + infiltration ring, same points yearly",
+  "mechanism": "Fixed-point repeat measurement separates real SOC gain from spatial noise; infiltration reveals biology faster than lab carbon.",
+  "metrics_improved": [
+   "soil_organic_carbon",
+   "soil_ph",
+   "soil_moisture",
+   "monitoring_quality"
+  ],
+  "region_fit": [
+   "all"
+  ],
+  "source": "FAO Soil Health / Soil Doctors; Weil & Brady",
+  "source_url": "https://www.fao.org/soils-portal/",
+  "tags": [
+   "soil",
+   "SOC",
+   "monitoring"
+  ],
+  "time_horizon": "short",
+  "title": "Soil health cards: prove your carbon gain",
+  "year": 2021
+ },
+ {
+  "conditions": {
+   "rainfall_mm": ">900",
+   "land_use": [
+    "lowland",
+    "clay"
+   ]
+  },
+  "confidence": "medium",
+  "contraindications": [
+   "Do not drain natural wetlands; only farm waterlogging"
+  ],
+  "domain": "climate x soil x biodiversity",
+  "effect_size": "Waterlogging days -50%; root disease -30%; dry-season soil fauna +25%",
+  "evidence_type": "drainage + agroecology",
+  "id": "KB28",
+  "intervention": "Raised beds + field surface drainage + waterlogging-tolerant legume (sesbania) in low patches",
+  "mechanism": "Beds keep root crowns aerated; drains stop anoxia that kills mycorrhizae; tolerant legumes keep N flowing where main crop drowns.",
+  "metrics_improved": [
+   "soil_moisture",
+   "microbial_diversity",
+   "yield_resilience"
+  ],
+  "region_fit": [
+   "humid",
+   "subhumid",
+   "irrigated"
+  ],
+  "source": "FAO Drainage & Waterlogging; IPCC AR6 Adaptation",
+  "source_url": "https://www.fao.org/irrigation/",
+  "tags": [
+   "flood",
+   "waterlogging",
+   "drainage"
+  ],
+  "time_horizon": "short",
+  "title": "Raised beds + drains beat waterlogging without losing wetlands",
+  "year": 2020
+ },
+ {
+  "conditions": {
+   "land_use": [
+    "monoculture",
+    "orchard",
+    "cropland"
+   ]
+  },
+  "confidence": "high",
+  "contraindications": [
+   "Do not till nesting banks in breeding season"
+  ],
+  "domain": "biodiversity indicators x land use",
+  "effect_size": "Ground-nesting bee occupancy +50-70%; cavity-nester use +40%; pollination +20%",
+  "evidence_type": "pollinator ecology",
+  "id": "KB29",
+  "intervention": "Nesting habitat: 1-2 sqm undisturbed bare bank + pithy-stem bundles + no-till corner",
+  "mechanism": "70% of wild bees nest in ground, not hives; undisturbed banks + stems close the nesting (not flower) bottleneck that flower strips alone miss.",
+  "metrics_improved": [
+   "pollinator_richness",
+   "pest_regulation",
+   "species_richness"
+  ],
+  "region_fit": [
+   "all"
+  ],
+  "source": "IPBES Pollinators (2016); FAO Pollinator-friendly farming; Antoine & Forrest",
+  "source_url": "https://www.ipbes.net/pollination",
+  "tags": [
+   "pollinator",
+   "nesting",
+   "bees"
+  ],
+  "time_horizon": "short",
+  "title": "Nest sites, not just flowers: the non-obvious pollinator fix",
+  "year": 2016
+ },
+ {
+  "conditions": {
+   "land_use": [
+    "grazed",
+    "pasture"
+   ]
+  },
+  "confidence": "medium",
+  "contraindications": [
+   "Follow vet withdrawal periods; never overdose"
+  ],
+  "domain": "soil x biodiversity x human impact",
+  "effect_size": "Dung removal rate x1.5-2; pasture fouling -30%; soil beetle richness +40%",
+  "evidence_type": "soil fauna studies",
+  "id": "KB30",
+  "intervention": "Dung-fauna smart worming: faecal-egg-count targeted treatment + avoid whole-herd ivermectin in beetle season",
+  "mechanism": "Blanket ivermectin residues kill dung beetles that bury dung (= SOC + parasite control); targeted dosing keeps beetles alive to do the work free.",
+  "metrics_improved": [
+   "soil_organic_carbon",
+   "microbial_diversity",
+   "nutrient_cycling"
+  ],
+  "region_fit": [
+   "semi-arid",
+   "grassland",
+   "subhumid"
+  ],
+  "source": "FAO Livestock & Environment; Lumaret & Errouissi; VerdÃº et al.",
+  "source_url": "https://www.fao.org/livestock-environment/",
+  "tags": [
+   "livestock",
+   "dung_beetle",
+   "soil_fauna"
+  ],
+  "time_horizon": "medium",
+  "title": "Save dung beetles: targeted worming builds soil free",
+  "year": 2018
+ },
+ {
+  "conditions": {
+   "human_impact": [
+    "overgrazing",
+    "deforestation"
+   ],
+   "land_use": [
+    "commons",
+    "degraded"
+   ]
+  },
+  "confidence": "medium",
+  "contraindications": [
+   "Needs agreed bylaws; elite capture risk"
+  ],
+  "domain": "human impact x land use x biodiversity",
+  "effect_size": "Vegetation cover +40-60% in 2-3 yrs; rule compliance +50% vs open access",
+  "evidence_type": "commons + restoration",
+  "id": "KB31",
+  "intervention": "Community exclosure + bylaws: rest 1-2 seasons, cut-and-carry, guarded native planting",
+  "mechanism": "Ostrom-style clear boundaries + graduated sanctions solve free-riding; rest lets root reserves + seed set recover before reuse.",
+  "metrics_improved": [
+   "vegetation_cover",
+   "habitat_diversity",
+   "soil_organic_carbon",
+   "species_richness"
+  ],
+  "region_fit": [
+   "semi-arid",
+   "grassland",
+   "subhumid"
+  ],
+  "source": "FAO Commons; Ostrom Governing the Commons; CBD",
+  "source_url": "https://www.fao.org/tenure/",
+  "tags": [
+   "commons",
+   "grazing",
+   "governance"
+  ],
+  "time_horizon": "medium",
+  "title": "Community exclosures with bylaws beat open grazing",
+  "year": 2015
+ },
+ {
+  "conditions": {
+   "temperature_c": ">30",
+   "land_use": [
+    "cropland"
+   ]
+  },
+  "confidence": "medium",
+  "contraindications": [
+   "Match shade % to crop light needs (30-40% max for cereals)"
+  ],
+  "domain": "climate x land use x biodiversity",
+  "effect_size": "Canopy temp -2-4C; bird/insect richness +35-50%; income diversity +30%",
+  "evidence_type": "multistrata trials",
+  "id": "KB32",
+  "intervention": "Multi-strata intercrop: timber/fruit overstory (30% shade) + crop + understory legume/vegetable",
+  "mechanism": "Stratified canopy partitions light/water/niches; birds + parasitoids persist in canopy even when ground crop is harvested.",
+  "metrics_improved": [
+   "species_richness",
+   "habitat_diversity",
+   "soil_organic_carbon",
+   "yield_resilience"
+  ],
+  "region_fit": [
+   "tropical",
+   "subhumid",
+   "humid"
+  ],
+  "source": "FAO Agroforestry; IPCC AR6; Perfecto & Vandermeer coffee multistrata studies",
+  "source_url": "https://www.fao.org/agroforestry/",
+  "tags": [
+   "multistrata",
+   "shade",
+   "intercrop"
+  ],
+  "time_horizon": "long",
+  "title": "Multi-strata cropping: farm in 3D for heat + habitat",
+  "year": 2019
+ }
+]

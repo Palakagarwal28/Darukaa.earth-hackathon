@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Darukaa.Earth — AI Biodiversity Intelligence</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrap">
+
+  <div class="hero">
+    <div>
+      <h1><span class="leaf">◈ Darukaa.Earth</span> — Biodiversity Intelligence</h1>
+      <p>An AI environmental scientist, not a chatbot. Multi-metric reasoning over soil · land · biodiversity · climate · human impact — every recommendation backed by retrievable evidence.</p>
+    </div>
+    <div class="status"><span class="dot" id="dot"></span><span id="statusTxt">connecting…</span></div>
+  </div>
+
+  <div class="tabs">
+    <button class="tab active" data-tab="chat" onclick="tab('chat')">💬 Chat Scientist</button>
+    <button class="tab" data-tab="assess" onclick="tab('assess')">🧪 Structured Assess</button>
+    <button class="tab" data-tab="kb" onclick="tab('kb')">📚 Knowledge Base</button>
+  </div>
+
+  <!-- CHAT -->
+  <div class="panel active" id="panel-chat">
+    <div class="card">
+      <div class="thread" id="thread"></div>
+      <div class="row">
+        <input id="sid" value="demo1" style="max-width:160px" title="session id (memory key)">
+        <input id="msg" placeholder="e.g. Biodiversity is declining on my land…" style="flex:1;min-width:220px">
+        <button class="primary" id="sendBtn" onclick="sendChat()">Send</button>
+      </div>
+      <div class="row">
+        <button class="ghost" onclick="demoChat()">▶ Run semi-arid wheat demo</button>
+        <span class="muted"><kbd>Enter</kbd> sends · incomplete input triggers clarifying questions · memory persists per session id</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ASSESS -->
+  <div class="panel" id="panel-assess">
+    <div class="card">
+      <h3>Site metrics → scientific report (<span class="muted">POST /assess</span>)</h3>
+      <div class="grid3">
+        <div><label>Soil organic carbon %</label><input id="f_soc" type="number" step="0.1" placeholder="0.3"></div>
+        <div><label>Soil pH</label><input id="f_ph" type="number" step="0.1" placeholder="8.0"></div>
+        <div><label>Soil moisture</label><select id="f_moist"><option value="">—</option><option>low</option><option>medium</option><option>high</option></select></div>
+        <div><label>Land use</label><input id="f_land" placeholder="monoculture"></div>
+        <div><label>Crop</label><input id="f_crop" placeholder="wheat"></div>
+        <div><label>Region</label><input id="f_region" placeholder="semi-arid"></div>
+        <div><label>Rainfall</label><select id="f_rain"><option value="">—</option><option>low</option><option>medium</option><option>high</option></select></div>
+        <div><label>Rainfall mm/yr</label><input id="f_mm" type="number" placeholder="450"></div>
+        <div><label>Temp °C</label><input id="f_temp" type="number" step="0.5" placeholder="32"></div>
+        <div><label>Latitude (geo bonus)</label><input id="f_lat" type="number" step="0.01" placeholder="13.0"></div>
+        <div><label>Longitude</label><input id="f_lon" type="number" step="0.01" placeholder="77.5"></div>
+        <div><label>Pollution note</label><input id="f_poll" placeholder="pesticide drift"></div>
+      </div>
+      <div class="row">
+        <label class="check"><input type="checkbox" id="f_pest" style="width:auto"> pesticide use</label>
+        <label class="check"><input type="checkbox" id="f_def" style="width:auto"> deforestation</label>
+        <label class="check"><input type="checkbox" id="f_burn" style="width:auto"> residue burning</label>
+        <label class="check"><input type="checkbox" id="f_enrich" checked style="width:auto"> climate enrich via geo</label>
+      </div>
+      <div class="row"><input id="f_q" placeholder="Query (optional): declining biodiversity, tired soil…" style="flex:1;min-width:220px"></div>
+      <div class="row">
+        <button class="primary" id="assessBtn" onclick="runAssess()">Generate report</button>
+        <button class="ghost" onclick="demoAssess()">▶ Fill wheat demo</button>
+      </div>
+    </div>
+    <div id="assessOut"></div>
+  </div>
+
+  <!-- KNOWLEDGE -->
+  <div class="panel" id="panel-kb">
+    <div class="card">
+      <h3>Evidence explorer (<span class="muted">GET /knowledge/search → /provenance</span>)</h3>
+      <div class="row">
+        <input id="kb_q" value="low SOC monoculture wheat semi-arid" style="flex:1;min-width:220px">
+        <input id="kb_region" placeholder="region filter" style="max-width:160px">
+        <button class="primary" onclick="kbSearch()">Search</button>
+      </div>
+      <p class="muted">Shows exactly how knowledge is retrieved and scored — click 📖 evidence for the full card (mechanism, effect size, source).</p>
+    </div>
+    <div id="kbOut"></div>
+  </div>
+
+  <footer>Darukaa.Earth hackathon · deterministic science engine + RAG evidence · runs offline; climate/LLM integrations optional · API docs at <a href="/docs">/docs</a></footer>
+</div>
+
+<div class="modal" id="modal" onclick="if(event.target===this)this.classList.remove('open')"><div class="box" id="modalBox"></div></div>
+<script src="app.js"></script>
+</body>
+</html>
