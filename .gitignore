@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Pytest / linters
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# App runtime (local only — never commit)
+sessions.db
+server.log
+server.log.err
+*.db
+
+# Secrets / local config
+.env
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
