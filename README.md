@@ -17,6 +17,7 @@ python -m uvicorn api.main:app --host 127.0.0.1 --port 8000
 
 Or double-click `run_local.ps1`. Offline demo with no internet required:
 `python -m app.chat --demo demo/example_semi_arid.json`
+Shareable live demos: `?tab=chat&demo=1`, `?tab=assess&demo=1`, `?tab=kb&demo=1&q=...`
 
 ## What to try (maps to requirements)
 

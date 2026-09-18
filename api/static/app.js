@@ -187,4 +187,14 @@ window.addEventListener("DOMContentLoaded", () => {
   loadStatus();
   $("msg").addEventListener("keydown", (e) => { if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); sendChat(); } });
   bubble("ai", "Welcome — I reason like an environmental scientist: every recommendation cites evidence. Try the demo, or tell me about your land (SOC %, rainfall, land use).");
+  // shareable deep links: ?tab=chat|assess|kb &demo=1 &q=...
+  const p = new URLSearchParams(location.search);
+  if (p.get("tab")) tab(p.get("tab"));
+  if (p.get("q")) $("kb_q").value = p.get("q");
+  if (p.get("demo") === "1") {
+    const t = p.get("tab") || "chat";
+    if (t === "assess") demoAssess();
+    else if (t === "kb") kbSearch();
+    else demoChat();
+  }
 });
