@@ -4,7 +4,7 @@ Behaves like an **AI environmental scientist, not a chatbot**: multi-metric reas
 soil · land · biodiversity · climate · human impact, with every recommendation backed by
 retrievable evidence (`knowledge/evidence_cards.json`, 32 cards).
 
-For the full system design, see **[ARCHITECTURE.md](ARCHITECTURE.md)** (written for evaluators).
+For the full system design, see **[ARCHITECTURE.md](ARCHITECTURE.md)** 
 
 ## Run it (2 minutes, offline, no keys needed)
 
